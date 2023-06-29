@@ -11,3 +11,8 @@
 I became interested in programming at school lessons of the TPC (Training and Production Complex), but I did not have enough points to enter a technical university. Entered the Pedagogical University, graduated as a teacher of history. But by the will of fate became a professional welder. However, the desire to become a programmer did not leave me. Now, having the opportunity, I want to fulfill my long-standing desire.
 
 ---
+## Skills:
+- HTML, CSS, JavaScript
+- Git, GitHub, VS Code
+- Figma
+---
