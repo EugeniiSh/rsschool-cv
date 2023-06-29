@@ -1,5 +1,5 @@
 # Evgenii Shmerko
-### Junior Frontend Developer
+### Frontend Developer
 ---
 ## Contact information:
 **Phone:** +7 902 652 82 66  
