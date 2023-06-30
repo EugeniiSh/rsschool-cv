@@ -13,8 +13,8 @@ I became interested in programming at school lessons of the TPC (Training and Pr
 
 ---
 ## Skills:
-- HTML, CSS, JavaScript
-- Git, GitHub, VS Code, Figma
+- HTML, CSS, JavaScript;
+- Git, GitHub, VS Code, Figma.
 
 ---
 ## Code example:
