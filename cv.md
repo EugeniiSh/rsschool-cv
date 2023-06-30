@@ -17,3 +17,20 @@ I became interested in programming at school lessons of the TPC (Training and Pr
 - Git, GitHub, VS Code
 - Figma
 ---
+## Code example:
+Task to solve when registering on Codewars:   
+This code does not execute properly. Try to figure out why.
+```
+function multiply(a, b)
+{
+   a * b
+}
+```
+Solution:
+```
+function multiply(a, b)
+{
+  return a * b
+}
+```
+---
