@@ -37,6 +37,6 @@ function multiply(a, b)
 ## Courses:
 - RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
 - Tomsk State University "Web programmer: from scratch to the first projects."  
-![TGU_certificate](img\TGU_cert.jpg)   
+![TGU_certificate](img/TGU_cert.jpg)   
 
 ---
