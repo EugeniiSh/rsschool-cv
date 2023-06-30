@@ -40,3 +40,7 @@ function multiply(a, b)
 ![TGU_certificate](img/TGU_cert.jpg)   
 
 ---
+## Languages:
+- Russian - Native
+- English - Intermediate\
+![SE_certificate](img/SE_cert.jpg) 
