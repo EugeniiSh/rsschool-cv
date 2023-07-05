@@ -2,3 +2,34 @@
 {
     box-sizing: border-box;
 }
+
+body
+{
+    font-family: 'Lato', sans-serif;
+}
+
+html 
+{
+    scroll-behavior: smooth; 
+}
+
+.wrapper 
+{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-list 
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link 
+{
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+}
