@@ -1,8 +1,198 @@
 @media (max-width: 768px) 
 {
+    /* =============== Активаторы ================== */
+    .activ-burger
+    {
+        right: 0 !important;
+    }
+
+    .activ-arrow-block
+    {
+        flex-direction: row-reverse;
+    }
+
+    .activ-arrow .half-arrow__top::after
+    {
+        right: 10px;
+    }
+
+
+    .activ-arrow .half-arrow__top::before
+    {
+        right: 19px;
+    }
+
+    .activ-arrow .half-arrow__bottom::after
+    {
+        left: auto;
+        right: -54px;
+    }
+
+    .activ-arrow .half-arrow__bottom::before
+    {
+        left: auto;
+        right: -45px;
+    }
+    /* ============================================= */
+
     .section 
     {
         text-align: center;
+    }
+
+    .header
+    {
+        top: 0;
+        left: auto;
+        right: -220px;
+        width: 220px;
+
+        border-bottom-right-radius: 0px;
+        transition: 0.3s;
+    }
+
+    .nav-list 
+    {
+        flex-direction: column;
+    }
+
+    .header-arrow
+    {
+        position: absolute;
+        left: -102px;
+        top: 0;
+
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        padding: 0 10px;
+        width: 105px;
+        height: 70px;
+
+        background-color: #37343f;
+
+        -webkit-mask-image: radial-gradient(circle at 0% 95%, transparent 20%, #00D4F0 21%);
+        -webkit-mask-size: 100% 100%;
+        -webkit-mask-position: top right;
+        -webkit-mask-repeat: no-repeat;
+
+        cursor: pointer;
+    }
+
+    .header-arrow:hover .arrow-item:nth-of-type(5)
+    {
+        animation: traffic 1.4s infinite;
+    }
+
+    .header-arrow:hover .arrow-item:nth-of-type(4)
+    {
+        animation: traffic 1.4s infinite 0.1s;
+    }
+
+    .header-arrow:hover .arrow-item:nth-of-type(3)
+    {
+        animation: traffic 1.4s infinite 0.2s;
+    }
+
+    .header-arrow:hover .arrow-item:nth-of-type(2)
+    {
+        animation: traffic 1.4s infinite 0.3s;
+    }
+
+    .header-arrow:hover .arrow-item:nth-of-type(1)
+    {
+        animation: traffic 1.4s infinite 0.4s;
+    }
+
+    .header-arrow:hover .half-arrow__top::after
+    {
+        animation: traffic 1.4s infinite 0.5s;
+    }
+
+    .header-arrow:hover .half-arrow__top::before
+    {
+        animation: traffic 1.4s infinite 0.6s;
+    }
+
+    .header-arrow:hover .half-arrow__bottom::after
+    {
+        animation: traffic 1.4s infinite 0.5s;
+    }
+
+    .header-arrow:hover .half-arrow__bottom::before
+    {
+        animation: traffic 1.4s infinite 0.6s;
+    }
+
+    .arrow-block
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .arrow-item
+    {
+        position: relative;
+        width: 10px;
+        height: 10px;
+
+        border: 3px solid #e1e7ea;
+        border-radius: 50%;
+    }
+
+    .half-arrow__top::after
+    {
+        content: '';
+        position: absolute;
+        width: 4.5px;
+        height: 4.5px;
+        right: -10px;
+        top: -14px;
+
+        border: 3px solid #e1e7ea;
+        border-radius: 50%;
+    }
+
+    .half-arrow__top::before
+    {
+        content: '';
+        position: absolute;
+        width: 4.5px;
+        height: 4.5px;
+        right: -19px;
+        top: -25px;
+
+        border: 3px solid #e1e7ea;
+        border-radius: 50%;
+    }
+
+    .half-arrow__bottom::after
+    {
+        content: '';
+        position: absolute;
+        width: 4.5px;
+        height: 4.5px;
+        left: -54px;
+        bottom: -14px;
+
+        border: 3px solid #e1e7ea;
+        border-radius: 50%;
+    }
+
+    .half-arrow__bottom::before
+    {
+        content: '';
+        position: absolute;
+        width: 4.5px;
+        height: 4.5px;
+        left: -45px;
+        bottom: -25px;
+
+        border: 3px solid #e1e7ea;
+        border-radius: 50%;
     }
 
     .main-container 
@@ -23,6 +213,7 @@
     {
         flex-direction: column;
         align-items: center;
+        padding-top: 40px;
     }
 
     .block-photo img
@@ -34,4 +225,28 @@
     {
         min-width: 50px;
     }
+
+    @keyframes traffic
+    {
+        from
+        {
+            border-color: #ffffff;
+            box-shadow: 0 0 15px 3px #ffffff;
+            background-color: #e1e7eac4;
+        }
+        50%
+        {
+            border-color: #ffffff;
+            box-shadow: 0 0 15px 3px #ffffff;
+            animation-timing-function: cubic-bezier( 0, 1, 0, 1);
+            background-color: #e1e7eac4;
+        }
+        to
+        {
+            border-color: #e1e7ea;
+            box-shadow: none;
+            animation-timing-function: cubic-bezier( 0, 1, 0, 1);
+        }
+    }
+
 }

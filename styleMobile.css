@@ -1,0 +1,84 @@
+@media (hover: none) and (pointer: coarse)
+{
+    .header-arrow:hover .arrow-item:nth-of-type(5),
+    .header-arrow:hover .arrow-item:nth-of-type(4),
+    .header-arrow:hover .arrow-item:nth-of-type(3),
+    .header-arrow:hover .arrow-item:nth-of-type(2),
+    .header-arrow:hover .arrow-item:nth-of-type(1),
+    .header-arrow:hover .half-arrow__top::after,
+    .header-arrow:hover .half-arrow__top::before,
+    .header-arrow:hover .half-arrow__bottom::after,
+    .header-arrow:hover .half-arrow__bottom::before
+    {
+        animation: none;
+    }
+
+    .arrow-item:nth-of-type(5)
+    {
+        animation: traffic 15s infinite;
+    }
+
+    .arrow-item:nth-of-type(4)
+    {
+        animation: traffic 15s infinite 2.5s;
+    }
+
+    .arrow-item:nth-of-type(3)
+    {
+        animation: traffic 15s infinite 5s;
+    }
+
+    .arrow-item:nth-of-type(2)
+    {
+        animation: traffic 15s infinite 7.5s;
+    }
+
+    .arrow-item:nth-of-type(1)
+    {
+        animation: traffic 15s infinite 10s;
+    }
+
+    .half-arrow__top::after
+    {
+        animation: traffic 15s infinite 12.5s;
+    }
+
+    .half-arrow__top::before
+    {
+        animation: traffic 15s infinite 15s;
+    }
+
+    .half-arrow__bottom::after
+    {
+        animation: traffic 15s infinite 12.5s;
+    }
+
+    .half-arrow__bottom::before
+    {
+        animation: traffic 15s infinite 15s;
+    }
+ 
+
+    @keyframes traffic
+    {
+        from
+        {
+            border-color: #ffffff;
+            box-shadow: 0 0 15px 3px #ffffff;
+            background-color: #e1e7eac4;
+        }
+        50%
+        {
+            border-color: #ffffff;
+            box-shadow: 0 0 15px 3px #ffffff;
+            animation-timing-function: cubic-bezier( 0, 1, 0, 1);
+            background-color: #e1e7eac4;
+        }
+        to
+        {
+            border-color: #e1e7ea;
+            box-shadow: none;
+            animation-timing-function: cubic-bezier( 0, 1, 0, 1);
+        }
+    }
+}
