@@ -1,8 +1,7 @@
 # Evgenii Shmerko
 ### Frontend Developer
 ---
-## Contact information:
-**Phone:** +7 902 652 82 66  
+## Contact information: 
 **E-mail:** evgenii.shmerko@mail.ru  
 **Telegram:** https://t.me/Evgeny_ae   
 **Discord:** Evgenii Shmerko (@EugeniiSh)
@@ -37,10 +36,10 @@ function multiply(a, b)
 ## Courses:
 - RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
 - Tomsk State University "Web programmer: from scratch to the first projects."  
-![TGU_certificate](img/TGU_cert.jpg)   
+![TGU_certificate](assets/img/TGU_cert.jpg)   
 
 ---
 ## Languages:
 - Russian - Native
 - English - Intermediate\
-![SE_certificate](img/SE_cert.jpg) 
+![SE_certificate](assets/img/SE_cert.jpg) 
