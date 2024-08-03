@@ -1,5 +1,5 @@
-import { Slider } from './_slider.js';
-import { data } from './_data.js';
+import { Slider } from './slider.js';
+import { data } from './data.js';
 
 const headerBlock = document.querySelector('.header');
 const nav = document.querySelector('.nav');
