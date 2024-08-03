@@ -1,0 +1,119 @@
+/* +++ === _modalWindow.scss === +++ */
+
+.modal-window
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding-top: 15vh;
+
+  background-color: rgba($color: #000000, $alpha: 0.5);
+
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 110;
+
+  @media (max-width: 768px)
+  {
+    padding-top: 8vh;
+  }
+
+  .modal-container
+  {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 60%;
+    margin: 0 auto;
+
+    border: 6px ridge black;
+    background-color: aliceblue;
+
+    @media (max-width: 768px)
+    {
+      max-width: 80%;
+    }
+
+    .modal-cross
+    {
+      position: absolute;
+      top: 0;
+      right: -60px;
+
+      width: 40px;
+      height: 40px;
+
+      cursor: pointer;
+
+      @media (max-width: 768px)
+      {
+        top: auto;
+        bottom: -60px;
+        left: 50%;
+        right: auto;
+
+        transform: translateX(-50%);
+      }
+
+      &::before,
+      &::after
+      {
+        position: absolute;
+        top: 50%;
+
+        content: '';
+        width: 40px;
+        height: 10px;
+
+        background-color: aliceblue;
+
+        transition: 0.3s;
+      }
+
+      &::before
+      {
+        transform: rotate(45deg);
+      }
+
+      &::after
+      {
+        transform: rotate(-45deg);
+      }
+
+      @media (hover: hover)
+      {
+        &:hover::before,
+        &:hover::after
+        {
+          background-color: #7b8abf;
+        }  
+      }
+    }
+
+    & > *:nth-child(1n + 3)
+    {
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    img
+    {
+      width: 100%;
+    }
+
+    span
+    {
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+  }
+}
+
+/* --- === _modalWindow.scss === --- */

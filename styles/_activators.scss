@@ -1,0 +1,47 @@
+/* +++ === _activators.scss === +++ */
+.active-modal
+{
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 768px)
+{
+  .activ-burger
+  {
+    right: 0 !important;
+  }
+
+  .activ-arrow-block
+  {
+    flex-direction: row-reverse;
+  }
+
+  .activ-arrow
+  {
+    & .half-arrow__top::after
+    {
+      right: 10px !important;
+    }
+
+    & .half-arrow__top::before
+    {
+      right: 19px !important;
+    }
+
+    & .half-arrow__bottom::after
+    {
+      left: auto !important;
+      right: -54px !important;
+    }
+
+    & .half-arrow__bottom::before
+    {
+      left: auto !important;
+      right: -45px !important;
+    }
+  }
+}
+
+
+/* --- === _activators.scss === --- */
