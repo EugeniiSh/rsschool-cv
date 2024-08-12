@@ -144,11 +144,11 @@ body li::before {
     width: 105px;
     height: 70px;
     background-color: #37343f;
-    mask-image: radial-gradient(circle at 0% 95%, transparent 20%, #00D4F0 21%);
+    mask-image: radial-gradient(circle at -15% 105%, transparent 25%, #00D4F0 26%);
     mask-size: 100% 100%;
     mask-position: top right;
     mask-repeat: no-repeat;
-    -webkit-mask-image: radial-gradient(circle at 0% 95%, transparent 20%, #00D4F0 21%);
+    -webkit-mask-image: radial-gradient(circle at -15% 105%, transparent 25%, #00D4F0 26%);
     -webkit-mask-size: 100% 100%;
     -webkit-mask-position: top right;
     -webkit-mask-repeat: no-repeat;
